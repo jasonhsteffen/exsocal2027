@@ -1,1 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExSoCal 2027 | February 4–6, 2027 | Las Vegas</title>
+  <meta name="description" content="ExSoCal 2027, February 4–6, 2027, at the Barrick Museum Auditorium, UNLV, Las Vegas.">
+  <style>
+    :root {
+      --scarlet: #CF0A2C;
+      --scarlet-dark: #A30822;
+      --charcoal: #1F1F1F;
+      --gray: #5E5E5E;
+      --light-gray: #F4F4F4;
+      --border: #E2E2E2;
+      --white: #FFFFFF;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--charcoal);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top band */
+    .top-band {
+      height: 8px;
+      background: var(--scarlet);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 80px 0 64px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--scarlet);
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 8vw, 4.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      color: var(--charcoal);
+    }
+
+    .tagline {
+      margin-top: 14px;
+      font-size: 1.15rem;
+      color: var(--gray);
+    }
+
+    .meta {
+      margin-top: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+
+    .meta div {
+      font-size: 0.95rem;
+    }
+
+    .meta strong {
+      display: block;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .actions {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      font-size: 0.98rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+
+    .btn-primary {
+      background: var(--scarlet);
+      color: var(--white);
+    }
+
+    .btn-primary:hover, .btn-primary:focus-visible {
+      background: var(--scarlet-dark);
+    }
+
+    .btn-outline {
+      border: 2px solid var(--charcoal);
+      color: var(--charcoal);
+    }
+
+    .btn-outline:hover, .btn-outline:focus-visible {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+
+    /* Sections */
+    section {
+      padding: 56px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gray);
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      max-width: 680px;
+      color: var(--charcoal);
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+    }
+
+    .columns h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .columns p {
+      color: var(--gray);
+      font-size: 0.97rem;
+    }
+
+    .columns .label {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--scarlet);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .text-link {
+      display: inline-block;
+      margin-top: 14px;
+      color: var(--scarlet);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid var(--scarlet);
+    }
+
+    .text-link:hover, .text-link:focus-visible {
+      color: var(--scarlet-dark);
+      border-bottom-color: var(--scarlet-dark);
+    }
+
+    footer {
+      padding: 36px 0 48px;
+      font-size: 0.9rem;
+      color: var(--gray);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 560px) {
+      .hero { padding: 56px 0 48px; }
+      .btn { width: 100%; text-align: center; }
+      .actions { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-band" aria-hidden="true"></div>
+
+<header class="hero wrap">
+  <p class="eyebrow">Exoplanet Conference</p>
+  <h1>ExSoCal 2027</h1>
+  <p class="tagline">Worlds beyond our sun, in the heart of Las Vegas.</p>
+
+  <div class="meta">
+    <div>
+      <strong>Dates</strong>
+      February 4–6, 2027
+    </div>
+    <div>
+      <strong>Venue</strong>
+      Barrick Museum Auditorium, UNLV
+    </div>
+    <div>
+      <strong>Location</strong>
+      Las Vegas, Nevada
+    </div>
+  </div>
+
+  <div class="actions">
+    <!-- Replace #REGISTRATION_FORM_URL with your registration Google Form link -->
+    <a class="btn btn-primary" href="#REGISTRATION_FORM_URL" target="_blank" rel="noopener">Register</a>
+    <!-- Replace #ABSTRACT_FORM_URL with your abstract submission Google Form link -->
+    <a class="btn btn-outline" href="#ABSTRACT_FORM_URL" target="_blank" rel="noopener">Submit an Abstract</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="about">
+    <h2>About</h2>
+    <p>
+      ExSoCal 2027 brings together researchers, students, and educators studying planets beyond our solar system.
+      Over three days in February, we will share new discoveries, discuss how distant worlds are found and
+      characterized, and build connections across disciplines.
+    </p>
+  </section>
+
+  <section>
+    <h2>Venue &amp; Hotel</h2>
+    <div class="columns">
+      <div>
+        <div class="label">Venue</div>
+        <h3>Barrick Museum Auditorium</h3>
+        <p>Barrick Museum of Natural History, 4505 South Maryland Parkway, UNLV campus, Las Vegas, NV.</p>
+      </div>
+      <div>
+        <div class="label">Hotel</div>
+        <h3>Hyatt Regency Las Vegas</h3>
+        <p>Located by the UNLV campus.</p>
+        <!-- Add a booking link or group rate code here when available -->
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Get Involved</h2>
+    <div class="columns">
+      <div>
+        <h3>Attend</h3>
+        <p>Secure your spot for ExSoCal 2027.</p>
+        <a class="text-link" href="#REGISTRATION_FORM_URL" target="_blank" rel="noopener">Registration form &rarr;</a>
+      </div>
+      <div>
+        <h3>Present</h3>
+        <p>Share your exoplanet research with the community.</p>
+        <a class="text-link" href="#ABSTRACT_FORM_URL" target="_blank" rel="noopener">Abstract submission &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p>ExSoCal 2027 &middot; February 4–6, 2027 &middot; Las Vegas, Nevada</p>
+  <!-- Add a contact email here if desired -->
+</footer>
+
+</body>
+</html>
 
