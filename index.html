@@ -57,6 +57,7 @@
       font-size: clamp(2.6rem, 8vw, 4.5rem);
       font-weight: 800;
       letter-spacing: -0.02em;
+      text-wrap: balance;
       line-height: 1.05;
       color: var(--charcoal);
     }
@@ -130,10 +131,7 @@
       border-bottom: 1px solid var(--border);
     }
 
-    section:last-of-type {
-      border-bottom: none;
-    }
-
+    
     h2 {
       font-size: 0.8rem;
       letter-spacing: 0.2em;
@@ -201,6 +199,12 @@
       .btn { width: 100%; text-align: center; }
       .actions { flex-direction: column; }
     }
+      .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+      .rule { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }
+    .cta-row { margin-top: 0; }
+    .cta { max-width: 560px; }
+    .deadline { margin-top: 10px; font-size: 0.95rem; color: var(--gray); }
+      a[data-todo] { outline: 2px dashed #CF0A2C; outline-offset: 3px; }
   </style>
 </head>
 <body>
@@ -208,9 +212,8 @@
 <div class="top-band" aria-hidden="true"></div>
 
 <header class="hero wrap">
-  <p class="eyebrow">Exoplanet Conference</p>
   <h1>ExSoCal 2027</h1>
-  <p class="tagline">Las Vegas</p>
+  <p class="tagline">Exoplanet Science Conference · Las Vegas, Nevada</p>
 
   <div class="meta">
     <div>
@@ -227,13 +230,7 @@
     </div>
   </div>
 
-  <div class="actions">
-    <!-- Replace #REGISTRATION_FORM_URL with your registration Google Form link -->
-    <a class="btn btn-primary" href="#REGISTRATION_FORM_URL" target="_blank" rel="noopener">Register</a>
-    <!-- Replace #ABSTRACT_FORM_URL with your abstract submission Google Form link -->
-    <a class="btn btn-outline" href="#ABSTRACT_FORM_URL" target="_blank" rel="noopener">Submit an Abstract</a>
-  </div>
-</header>
+  </header>
 
 <main class="wrap">
 
@@ -244,6 +241,22 @@
       Over three days in February, we will share new discoveries, discuss how distant worlds are found and
       characterized, and build connections across disciplines.
     </p>
+  
+    <hr class="rule">
+    <div class="cta-row">
+      <div class="cta">
+        <a class="btn btn-outline" href="#ABSTRACT_FORM_URL" data-todo="link not set" target="_blank" rel="noopener">Submit an Abstract<span class="sr-only"> (opens in new tab)</span></a>
+        <p class="deadline">Abstract deadline: December 25, 2026</p>
+      </div>
+    </div>
+    <hr class="rule">
+    <div class="cta-row">
+      <div class="cta">
+        <a class="btn btn-primary" href="#REGISTRATION_FORM_URL" data-todo="link not set" target="_blank" rel="noopener">Register<span class="sr-only"> (opens in new tab)</span></a>
+        <p class="deadline">Registration fee: $50. Registration deadline: January 16, 2027.</p>
+        <p class="deadline">Late registration: $75, open until the conference begins on February 4, 2027.</p>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -263,23 +276,7 @@
     </div>
   </section>
 
-  <section>
-    <h2>Get Involved</h2>
-    <div class="columns">
-      <div>
-        <h3>Attend</h3>
-        <p>Secure your spot for ExSoCal 2027.</p>
-        <a class="text-link" href="#REGISTRATION_FORM_URL" target="_blank" rel="noopener">Registration form &rarr;</a>
-      </div>
-      <div>
-        <h3>Present</h3>
-        <p>Share your exoplanet research with the community.</p>
-        <a class="text-link" href="#ABSTRACT_FORM_URL" target="_blank" rel="noopener">Abstract submission &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-</main>
+  </main>
 
 <footer class="wrap">
   <p>ExSoCal 2027 &middot; February 4–6, 2027 &middot; Las Vegas, Nevada</p>
@@ -288,4 +285,3 @@
 
 </body>
 </html>
-
