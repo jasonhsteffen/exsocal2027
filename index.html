@@ -37,6 +37,33 @@
       background: var(--scarlet);
     }
 
+    .page-banner img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .page-banner--exoplanets {
+      max-width: 1120px;
+      margin-inline: auto;
+    }
+
+    .page-banner--campus img {
+      aspect-ratio: 5 / 2;
+      object-fit: cover;
+      object-position: center 73%;
+    }
+
+    .page-banner figcaption {
+      padding: 6px 24px;
+      background: var(--light-gray);
+      color: var(--gray);
+      font-size: 0.8rem;
+      text-align: right;
+    }
+
+    .page-banner figcaption a { color: inherit; }
+
     /* Hero */
     .hero {
       padding: 80px 0 64px;
@@ -211,6 +238,12 @@
 
 <div class="top-band" aria-hidden="true"></div>
 
+<figure class="page-banner page-banner--exoplanets">
+  <img src="assets/trappist-1.jpg" width="1600" height="900"
+       alt="Artist’s illustration of the TRAPPIST-1 system, with planets silhouetted against a red dwarf star">
+  <figcaption><a href="https://science.nasa.gov/photojournal/trappist-1-system-artist-concept/">TRAPPIST-1 artist’s concept</a> · NASA/JPL-Caltech</figcaption>
+</figure>
+
 <header class="hero wrap">
   <h1>ExSoCal 2027</h1>
   <p class="tagline">Exoplanet Science Conference · Las Vegas, Nevada</p>
@@ -298,12 +331,18 @@
 
   <section>
     <h2>Organizers</h2>
-    <p>Jason Steffen</p>
-    <p>Jay Lim</p>
-    <p>Zhaohuan Zhu</p>
+    <p><a href="https://unlv-spfg.github.io/team/steffen-jason/">Jason Steffen</a></p>
+    <p><a href="https://unlv-spfg.github.io/team/lim-jeonghoon/">Jay Lim</a></p>
+    <p><a href="https://unlv-spfg.github.io/team/zhu-zhaohuan/">Zhaohuan Zhu</a></p>
   </section>
 
   </main>
+
+<figure class="page-banner page-banner--campus">
+  <img src="assets/unlv-campus.jpg" width="1920" height="1280" loading="lazy"
+       alt="Aerial view of UNLV’s Lied Library and the Las Vegas skyline at dusk">
+  <figcaption>UNLV campus · Photo by Josh Hawkins</figcaption>
+</figure>
 
 <footer class="wrap">
   <p>ExSoCal 2027 &middot; February 4–6, 2027 &middot; Las Vegas, Nevada</p>
